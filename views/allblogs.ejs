@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <h2>All Blogs</h2>
+    <%- include('./partials/nav.ejs') %> <% if(blogs.length > 0) { %> <%
+    blogs.forEach( blog => { %>
+    <h3><%= blog.title %></h3>
+    <p><%= blog.snippet %></p>
+    <% }) %> <% } %>
+
+    <h3><a href="/">Return to homepage</a></h3>
+  </body>
+</html>
